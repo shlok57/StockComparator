@@ -1,0 +1,16 @@
+function GetQuote()
+{
+	var inp_cmpy = document.getElementById("cmpy_name").value;	
+	var index = Cmpy_list.indexOf(inp_cmpy);
+	var inp_cmpy_code = Cmpy_code[index];
+	var url = "http://money.rediff.com/";
+	url1 = url + inp_cmpy_code;
+
+//	<%= data = Nokogiri::HTML(open(url1)) %>
+//	<%= inp_cmpy_prc = data.at_css('#ltpid').text %>
+
+	document.getElementById("op_cmpy").innerHTML = inp_cmpy;
+	//document.getElementById("op_cmpy_prc").innerHTML = inp_cmpy_prc;
+}
+
+
